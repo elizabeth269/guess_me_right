@@ -1,3 +1,4 @@
+use rand::Rng;
 use std::io;
 fn main() {
     //introduce the game
@@ -18,7 +19,8 @@ fn main() {
 
     //restrict certain users from playing the game.
     if 18 > age && age < 25 {
+        println!("Welcome{name}");
     } else {
-        println!("Dear {name}, you are not allowed to play the game")
+        println!("Dear {name}, you are not allowed to play the game. Only people between 18 and 25 are allowed.")
     }
 }
