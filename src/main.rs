@@ -46,6 +46,7 @@ fn main() {
                 }
             }
         }
+        //end of game
         println!("Dear {name} You tried {counter} times, weldone.");
     } else {
         println!("Dear {name} you are not allowed to play the game. Only people between 18 and 25 are allowed.")
