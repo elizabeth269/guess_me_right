@@ -15,4 +15,10 @@ fn main() {
         .expect("couldn't read user input");
 
     let age: u32 = age.trim().parse().expect("your age should be a number");
+
+    //restrict certain users from playing the game.
+    if 18 > age && age < 25 {
+    } else {
+        println!("Dear {name}, you are not allowed to play the game")
+    }
 }
